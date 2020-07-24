@@ -39,12 +39,14 @@ Overview
   * System calls
   * Examples, from UNIX (e.g. Linux, OSX, FreeBSD):
 
-            fd = open("out", 1);
-            write(fd, "hello\n", 6);
-            pid = fork();
+       ```c
+       fd = open("out", 1);
+       write(fd, "hello\n", 6);
+     pid = fork();
+       ```
 
   * These look like function calls but they aren't 
-
+  
 * Why is O/S design/implementation hard/interesting?
   * unforgiving environment: quirky h/w, hard to debug
   * it must be efficient (thus low-level?)
